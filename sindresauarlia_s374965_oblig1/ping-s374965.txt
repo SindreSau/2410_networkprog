@@ -1,0 +1,100 @@
+OSLOMET.NO
+
+minimum: 8.552
+maximum: 11.090
+average: 9.724
+
+----------------------------------------
+OX.AC.UK
+
+minimum: 7.838
+maximum: 10.220
+average: 8.900
+
+----------------------------------------
+GAIA.CS.UMASS.EDU
+
+No response
+
+----------------------------------------
+SYDNEY.EDU.AU
+
+minimum: 264.585
+maximum: 270.118
+average: 266.097
+
+----------------------------------------
+EXPLANATION OF THE MINIMUM RTT
+
+The biggest contributor to the minimum RTT is the distance between the source and the destination.
+We can clearly see that there is a much greater minimum RTT for the destintation in Sydney Australia, as 
+this destination is the farthest away from my computer, located in Norway.
+
+The minimum RTT for the destination in the UK is barely lower than Oslomet's, even though Oslomet's 
+server probably is located in Norway. This might be due to how the "content delivery networks" are set 
+up, or how the servers are performing.
+
+----------------------------------------
+
+
+full outputs:
+
+ping www.oslomet.no -c 10
+PING www.oslomet.no(www.oslomet.no (2001:700:700:a::a)) 56 data bytes
+64 bytes from www.oslomet.no (2001:700:700:a::a): icmp_seq=1 ttl=56 time=8.55 ms
+64 bytes from www.oslomet.no (2001:700:700:a::a): icmp_seq=2 ttl=56 time=9.65 ms
+64 bytes from www.oslomet.no (2001:700:700:a::a): icmp_seq=3 ttl=56 time=10.1 ms
+64 bytes from www.oslomet.no (2001:700:700:a::a): icmp_seq=4 ttl=56 time=11.1 ms
+64 bytes from www.oslomet.no (2001:700:700:a::a): icmp_seq=5 ttl=56 time=11.0 ms
+64 bytes from www.oslomet.no (2001:700:700:a::a): icmp_seq=6 ttl=56 time=9.55 ms
+64 bytes from www.oslomet.no (2001:700:700:a::a): icmp_seq=7 ttl=56 time=9.11 ms
+64 bytes from www.oslomet.no (2001:700:700:a::a): icmp_seq=8 ttl=56 time=8.94 ms
+64 bytes from www.oslomet.no (2001:700:700:a::a): icmp_seq=9 ttl=56 time=9.55 ms
+64 bytes from www.oslomet.no (2001:700:700:a::a): icmp_seq=10 ttl=56 time=9.80 ms
+
+--- www.oslomet.no ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9013ms
+rtt min/avg/max/mdev = 8.552/9.724/11.090/0.768 ms
+
+
+ping ox.ac.uk -c 10
+PING ox.ac.uk (151.101.66.216) 56(84) bytes of data.
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=1 ttl=57 time=9.42 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=2 ttl=57 time=9.24 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=3 ttl=57 time=9.82 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=4 ttl=57 time=7.99 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=5 ttl=57 time=8.45 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=6 ttl=57 time=9.49 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=7 ttl=57 time=10.2 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=8 ttl=57 time=8.60 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=9 ttl=57 time=7.84 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=10 ttl=57 time=7.95 ms
+
+--- ox.ac.uk ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9013ms
+rtt min/avg/max/mdev = 7.838/8.900/10.220/0.804 ms
+
+
+ping gaia.cs.umass.edu -c 10
+PING gaia.cs.umass.edu (128.119.245.12) 56(84) bytes of data.
+
+--- gaia.cs.umass.edu ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 9213ms
+
+
+ping sydney.edu.au -c 10
+PING sydney.edu.au (20.248.131.216) 56(84) bytes of data.
+64 bytes from 20.248.131.216 (20.248.131.216): icmp_seq=1 ttl=101 time=266 ms
+64 bytes from 20.248.131.216 (20.248.131.216): icmp_seq=2 ttl=101 time=270 ms
+64 bytes from 20.248.131.216 (20.248.131.216): icmp_seq=3 ttl=101 time=265 ms
+64 bytes from 20.248.131.216 (20.248.131.216): icmp_seq=4 ttl=101 time=267 ms
+64 bytes from 20.248.131.216 (20.248.131.216): icmp_seq=5 ttl=101 time=266 ms
+64 bytes from 20.248.131.216 (20.248.131.216): icmp_seq=6 ttl=101 time=265 ms
+64 bytes from 20.248.131.216 (20.248.131.216): icmp_seq=7 ttl=101 time=265 ms
+64 bytes from 20.248.131.216 (20.248.131.216): icmp_seq=8 ttl=101 time=266 ms
+64 bytes from 20.248.131.216 (20.248.131.216): icmp_seq=9 ttl=101 time=265 ms
+64 bytes from 20.248.131.216 (20.248.131.216): icmp_seq=10 ttl=101 time=266 ms
+
+--- sydney.edu.au ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9009ms
+rtt min/avg/max/mdev = 264.585/266.097/270.118/1.479 ms
