@@ -4,7 +4,7 @@ HEADER = 64
 PORT = 8080
 FORMAT = "utf-8"
 DISCONNECT_MESSAGE = "!DISCONNECT"
-SERVER = "10.0.0.1"
+SERVER = socket.gethostbyname(socket.gethostname()) # Get the server's IP address
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # ==(bind on server, connect on client) ==

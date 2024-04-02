@@ -1,0 +1,16 @@
+Traceroute returns a list of hops between the source and the destination, along with
+the round trip time (RTT) for each destination for three packets.
+
+To achieve this, the host starts by sending a packet with a TTL of 1, which will
+expire at the first hop. The first hop will then return an ICMP message to the host,
+indicating that the TTL has expired. The host will then send a packet with a TTL of 2,
+which will expire at the second hop, and so on.
+
+The first hop is denoted as _gateway, and refers to my router. The RTT for this 
+hop is minimal, as the router is pysically close.
+
+The second hop is the first step outside my local network, which in my case is my 
+ISP. The following hops are all within the ISP's network.
+
+
+source: https://networklessons.com/cisco/ccna-routing-switching-icnd1-100-105/traceroute

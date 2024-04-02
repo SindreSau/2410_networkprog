@@ -38,3 +38,4 @@ if args.server:
     print(f'The server is running with IP address = {args.ip} and port address = {args.port}')
 else:
     print(f'The client is running with IP address = {args.ip} and port address = {args.port}')
+
